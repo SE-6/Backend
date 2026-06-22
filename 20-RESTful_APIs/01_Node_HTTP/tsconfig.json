@@ -2,8 +2,9 @@
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true, // Enables default imports from CommonJS modules
-    "lib": ["es2022"], // Includes modern ES features in the type system
-    "target": "es2022", // Sets the JavaScript version output
+    "lib": ["ESNext"], // Includes modern ES features in the type system
+    "target": "ESNext", // Sets the JavaScript version output
+    "types": ["node"], // Loads Node.js type definitions explicitly
     "skipLibCheck": true, // Skips type checking of declaration files (*.d.ts)
     "allowJs": true, // Allows JavaScript files in the project
     "resolveJsonModule": true, // Allows importing JSON modules
@@ -19,11 +20,11 @@
     "rewriteRelativeImportExtensions": true, // Rewrites relative imports with correct extensions
     "module": "preserve", // Preserves ES module syntax (important for native ESM)
     "noEmit": false, // Enables output generation
+    "rootDir": "./src", // Keeps emitted files rooted at src/
     "outDir": "dist", // Output directory for compiled JavaScript
     /* Paths */
-    "baseUrl": "./src", // Base path for module resolution
     "paths": {
-      "#*": ["*"] // Defines internal path aliases with '#' to avoid conflict with '@'
+      "#*": ["./src/*"] // Defines internal path aliases with '#' to avoid conflict with '@'
     }
   },
   "include": ["src"] // Files to include in compilation
