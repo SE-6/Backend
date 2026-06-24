@@ -1,0 +1,90 @@
+import type { RequestHandler } from 'express';
+import { User } from '#models';
+import type z from 'zod';
+import type { userInputSchema } from '#schemas';
+
+type UserInputDTO = z.infer<typeof userInputSchema>;
+type UserDTO = UserInputDTO;
+
+export const createUser: RequestHandler<
+  unknown, // URL /:id params
+  UserDTO, // response
+  UserInputDTO // Request
+> = async (req, res) => {
+  const existingUser = await User.findOne({ email: req.body.email });
+
+  // const {firstName, lastName, email} = req.body;
+
+  if (existingUser) {
+    throw new Error('User with this email already exist', {
+      cause: { status: 409 },
+    });
+  }
+
+  const user = await User.create(req.body);
+  res.status(201).json(user);
+};
+
+// GET /users
+// export const getAllUsers: RequestHandler = async (req, res) => {
+//   const users = await User.find();
+
+//   if (!users.length) throw new Error('No users found', { cause: 404 });
+//   res.json(users); // unreachable
+// };
+
+export const getAllUsers: RequestHandler = async (req, res, next) => {
+  try {
+    const users = await User.find();
+    if (!users.length) throw new Error('No users found', { cause: 404 });
+    res.json(users);
+  } catch (error) {
+    next(error);
+  }
+};
+
+// GET /users/:id
+export const getUserById: RequestHandler = async (req, res) => {
+  const { id } = req.params;
+  const user = await User.findById(id);
+
+  if (!user) {
+    return res.status(404).json({ message: 'User not found' });
+  }
+
+  res.json(user);
+};
+
+// POST /users
+// export const createUser: RequestHandler = async (req, res) => {
+//   const newUser = await User.create(req.body);
+//   res.status(201).json(newUser);
+// };
+
+// PUT /users/:id
+export const updateUser: RequestHandler = async (req, res) => {
+  const { id } = req.params;
+
+  const updatedUser = await User.findByIdAndUpdate(id, req.body, {
+    returnDocument: 'after', // return the updated document, not the old one
+    runValidators: true, // schema validation also runs on updates
+  });
+
+  if (!updatedUser) {
+    return res.status(404).json({ message: 'User not found' });
+  }
+
+  res.json(updatedUser);
+};
+
+// DELETE /users/:id
+export const deleteUser: RequestHandler = async (req, res) => {
+  const { id } = req.params;
+  const deletedUser = await User.findByIdAndDelete(id);
+
+  if (!deletedUser) {
+    return res.status(404).json({ message: 'User not found' });
+  }
+
+  res.json({ message: 'User deleted successfully', user: deletedUser });
+};
