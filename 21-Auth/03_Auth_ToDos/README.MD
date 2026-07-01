@@ -1,4 +1,4 @@
-# Auth Day 3 — Your Turn (Zod, Cookies, Refresh & Security)
+# Auth Day 3 Your Turn (Zod, Cookies, Refresh & Security)
 
 ## Where to start => work in this order
 
@@ -15,7 +15,7 @@ Build bottom-up, so each piece exists before the thing that uses it. Open each f
 
 ## Quick test (Insomnia / Postman)
 
-The cookie jar handles auth for you — no manual `Bearer` header.
+The cookie handles auth for you, no manual `Bearer` header.
 
 1. `POST /auth/register` or `/auth/login` → you get two cookies (access + refresh).
 2. `GET /auth/me` → works automatically.
