@@ -1,0 +1,14 @@
+C:\Users\onure\Desktop\Classes_II\classes_II\bin\Debug\net10.0\classes_II.exe
+C:\Users\onure\Desktop\Classes_II\classes_II\bin\Debug\net10.0\classes_II.deps.json
+C:\Users\onure\Desktop\Classes_II\classes_II\bin\Debug\net10.0\classes_II.runtimeconfig.json
+C:\Users\onure\Desktop\Classes_II\classes_II\bin\Debug\net10.0\classes_II.dll
+C:\Users\onure\Desktop\Classes_II\classes_II\bin\Debug\net10.0\classes_II.pdb
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.AssemblyInfoInputs.cache
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.AssemblyInfo.cs
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.csproj.CoreCompileInputs.cache
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.dll
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\refint\classes_II.dll
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.pdb
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\classes_II.genruntimeconfig.cache
+C:\Users\onure\Desktop\Classes_II\classes_II\obj\Debug\net10.0\ref\classes_II.dll
