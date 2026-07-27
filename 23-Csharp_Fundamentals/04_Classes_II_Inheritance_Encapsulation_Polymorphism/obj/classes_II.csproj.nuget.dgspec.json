@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\onure\\Desktop\\Classes_II\\classes_II\\classes_II.csproj": {}
+    "C:\\Users\\onure\\Desktop\\SE_006\\Backend\\23-Csharp_Fundamentals\\04_Classes_II_Inheritance_Encapsulation_Polymorphism\\classes_II.csproj": {}
   },
   "projects": {
-    "C:\\Users\\onure\\Desktop\\Classes_II\\classes_II\\classes_II.csproj": {
+    "C:\\Users\\onure\\Desktop\\SE_006\\Backend\\23-Csharp_Fundamentals\\04_Classes_II_Inheritance_Encapsulation_Polymorphism\\classes_II.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\onure\\Desktop\\Classes_II\\classes_II\\classes_II.csproj",
+        "projectUniqueName": "C:\\Users\\onure\\Desktop\\SE_006\\Backend\\23-Csharp_Fundamentals\\04_Classes_II_Inheritance_Encapsulation_Polymorphism\\classes_II.csproj",
         "projectName": "classes_II",
-        "projectPath": "C:\\Users\\onure\\Desktop\\Classes_II\\classes_II\\classes_II.csproj",
+        "projectPath": "C:\\Users\\onure\\Desktop\\SE_006\\Backend\\23-Csharp_Fundamentals\\04_Classes_II_Inheritance_Encapsulation_Polymorphism\\classes_II.csproj",
         "packagesPath": "C:\\Users\\onure\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\onure\\Desktop\\Classes_II\\classes_II\\obj\\",
+        "outputPath": "C:\\Users\\onure\\Desktop\\SE_006\\Backend\\23-Csharp_Fundamentals\\04_Classes_II_Inheritance_Encapsulation_Polymorphism\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onure\\AppData\\Roaming\\NuGet\\NuGet.Config"
