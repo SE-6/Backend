@@ -1,0 +1,1 @@
+record UserRequestDTO(string Name);
