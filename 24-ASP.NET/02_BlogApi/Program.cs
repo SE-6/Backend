@@ -6,12 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Register services (interface + implementation)
 builder.Services.AddSingleton<IUserService, InMemoryUserService>();
-
+builder.Services.AddSingleton<IPostService, InMemoryPostService>();
 
 var app = builder.Build();
 
-
 app.MapUsers();
+app.MapPosts();
+
+
 app.Run();
 
 

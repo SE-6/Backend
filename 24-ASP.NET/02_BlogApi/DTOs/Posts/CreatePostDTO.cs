@@ -4,7 +4,7 @@ namespace BlogApi.Dtos.Posts;
 
 public record CreatePostDto(
     [property: Required]
-    Guid UserId,
+    Guid? UserId,
 
     [property: Required]
     [property: StringLength(200, MinimumLength = 1)]
