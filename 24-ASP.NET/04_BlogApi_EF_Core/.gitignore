@@ -1,0 +1,38 @@
+# .NET build output
+bin/
+obj/
+out/
+
+# Rider / Visual Studio / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.sln.iml
+
+# Additional build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# ASP.NET secrets and local configuration
+appsettings.Development.json
+secrets.json
+.env
+.env.*
+!.env.example
+
+# EF Core / SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
